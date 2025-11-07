@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Us - Politeknik Seberang Perai</title>
+
+    <!-- jQuery CDN -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <!-- Font Awesome CDN for Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Navigation Bar -->
+    <nav>
+      <a href="#" class="nav-button"
+        ><i class="fas fa-info-circle"></i>About Us</a
+      >
+      <a href="#" class="nav-button"><i class="fas fa-cogs"></i>Our Services</a>
+      <a href="#" class="nav-button"
+        ><i class="fas fa-pen"></i>Registration Form</a
+      >
+      <a href="#" class="nav-button"
+        ><i class="fas fa-envelope"></i>Contact Us</a
+      >
+    </nav>
+
+    <!-- Logo -->
+    <img src="logo-PSP.jpg" id="logo" alt="Politeknik Seberang Perai Logo" />
+
+    <!-- Contact Info -->
+    <div class="contact-info">
+      <a href="https://wa.me/601127374120" target="_blank"
+        >Send a WhatsApp message</a
+      >
+      <span>Call: +60 1127374120</span>
+      <span>Email: rauf@gmail.com</span>
+      <span
+        >Address: Politeknik Seberang Perai, Jalan Permatang Pauh, 13500
+        Permatang Pauh, Pulau Pinang, Malaysia</span
+      >
+    </div>
+
+    <!-- Social Media -->
+    <div class="social-media">
+      <a href="https://facebook.com" class="facebook"
+        ><i class="fab fa-facebook-f"></i
+      ></a>
+      <a href="https://x.com" class="twitter"><i class="fab fa-twitter"></i></a>
+      <a href="https://instagram.com" class="instagram"
+        ><i class="fab fa-instagram"></i
+      ></a>
+    </div>
+
+    <script>
+      $(document).ready(function(){
+        $("#logo").hide().fadeIn(2000);
+        $(".nav-button").hover(
+          function(){ $(this).css("background-color", "#0b7dda"); },
+          function(){ $(this).css("background-color", "#2196f3"); }
+        );
+      });
+    </script>
+  </body>
+</html>
